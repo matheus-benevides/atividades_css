@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Superaçaiajin</title>
+    <link rel="stylesheet" href="_css/style.css">
 </head>
+
 <body>
-    
+    <h1>FORMULARIO SUPERAÇAIJIN</h1>
+    <form action="">
+        <fieldset class="dados">
+            <legend>Dados Pessoais:</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+            <label for="sobre">Idade:</label>
+            <input type="number" name="idade" id="idade" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" required>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" required>
+            <label for="planeta">Planeta de Origem:</label>
+            <select name="planeta" id="planeta" required>
+                <option value="terra">Planeta Terra</option>
+                <option value="vegeta">Planeta Vegeta</option>
+                <option value="namek">Planeta Namek</option>
+                <option value="namek">Planeta Senhor Kaioh</option>
+            </select>
+        </fieldset>
+        <fieldset class="dadosEx">
+            <legend>Dados extras:</legend>
+            <label for="raca">Raça do Universo 7 preferida:</label>
+            <select name="raca" id="raca" required>
+                <option value="terraqueo">Terráqueo</option>
+                <option value="sayajin">Sayajin</option>
+                <option value="terraqueo">Namekosejin</option>
+                <option value="terraqueo">Freeza</option>
+                <option value="terraqueo">Yardrats</option>
+            </select>
+            <div>
+                <label for="trabalho">Trabalho</label>
+                <input type="radio" name="trabalho" id="trabalho" value="autonomo" required>Autonomo
+                <input type="radio" name="trabalho" id="trabalho" value="empregadoClt" required>Empregado CLT
+                <input type="radio" name="trabalho" id="trabalho" value="empresario" required>Empresario
+                <input type="radio" name="trabalho" id="trabalho" value="tipoGoku" required>Tipo
+            </div>
+        </fieldset>
+        <fieldset class="acaiPrefe">
+            <legend>Seu açai é perfeito de que jeito?</legend>
+            <input type="checkbox" name="acaiPref" id="acaiPref" value="puro">Puro
+            <input type="checkbox" name="acaiPref" id="acaiPref" value="comBanana" >Com Banana
+            <input type="checkbox" name="acaiPref" id="acaiPref" value="comMorango" >Com Morango
+            <input type="checkbox" name="acaiPref" id="acaiPref" value="comGranola" >Com Granola
+            <input type="checkbox" name="acaiPref" id="acaiPref" value="temGostoDeTerra" >Tem gosto de Terra
+        </fieldset>
+        <fieldset class="tamanho">
+            <legend>Qual o tamanho preferido?</legend>
+            <input type="radio" name="tamanho" id="tamanho" value="500" required>500ml
+            <input type="radio" name="tamanho" id="tamanho" value="300" required>300ml
+            <input type="radio" name="tamanho" id="tamanho" value="100" required>100ml
+            <input type="radio" name="tamanho" id="tamanho" value="casquinha" required>Casquinha
+            <input type="radio" name="tamanho" id="tamanho" value="naoEntendeu" required>Qual parte do gosto de terra
+            você não entendeu?
+        </fieldset>
+        <fieldset class="obser">
+            <label for="obs">Observações:</label>
+            <textarea name="obs" id="obs" placeholder="Escreva suas observações...Eu gosto de açaí porque..."
+                required></textarea>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
 </body>
+
 </html>
