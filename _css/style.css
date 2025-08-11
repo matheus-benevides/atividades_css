@@ -51,7 +51,7 @@ textarea::placeholder{
 select{
     padding: 5px;
     border-radius: 5px;
-    width: 50%;
+    width: 30%;
 }
 button{
     color: white;
