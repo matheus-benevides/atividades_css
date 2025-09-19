@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #4B0082;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("/_imagens/gokussj4.png");
@@ -7,7 +7,8 @@ body{
     background-attachment: fixed;
     background-size: 50%;
 }
-h1{
+
+h1 {
     text-align: center;
     background-color: #8B008B;
     width: 100%;
@@ -16,44 +17,60 @@ h1{
     border: dotted 3px gold;
     font-family: fantasy;
 }
-fieldset{
+
+fieldset {
     color: white;
     border: solid gold 3px;
 }
-.dados label{
+
+.dados label {
     margin-bottom: 10px;
     display: block;
 }
-.dados input{
+
+.dados input {
     padding: 5px;
     border-radius: 5px;
     outline: none;
     width: 60%;
     margin-bottom: 10px;
 }
-.dadosEx div{
+
+.dadosEx div {
     display: block;
 }
-.dadosEx input, .acaiPrefe, .tamanho{
+
+.dadosEx input,
+.acaiPrefe,
+.tamanho {
     margin-top: 15px;
 }
-.dadosEx, .acaiPrefe, .tamanho, .obser, button{
+
+.dadosEx,
+.acaiPrefe,
+.tamanho,
+.obser,
+button {
     margin-top: 15px;
 }
-textarea{
+
+textarea {
     display: block;
     width: 75%;
     height: 150px;
 }
-textarea::placeholder{
+
+textarea::placeholder {
     color: black;
 }
-select{
+
+select {
     padding: 5px;
     border-radius: 5px;
     width: 30%;
 }
-button{
+
+button {
     color: white;
     background-color: #9932CC;
     border: none;
@@ -65,3 +82,9 @@ button{
     text-transform: uppercase;
 }
 
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=tel]:focus {
+    background: lightpink;
+}

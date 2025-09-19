@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Superaçaiajin</title>
     <link rel="stylesheet" href="_css/style.css">
+    <script src="_js/formulario2.js" defer></script>
 </head>
 
 <body>
@@ -23,21 +24,21 @@
             <input type="text" name="endereco" id="endereco" required>
             <label for="planeta">Planeta de Origem:</label>
             <select name="planeta" id="planeta" required>
-                <option value="terra">Planeta Terra</option>
-                <option value="vegeta">Planeta Vegeta</option>
-                <option value="namek">Planeta Namek</option>
-                <option value="namek">Planeta Senhor Kaioh</option>
+                <option value="Planeta Terra">Planeta Terra</option>
+                <option value="Planeta Vegeta">Planeta Vegeta</option>
+                <option value="Planeta Namek">Planeta Namek</option>
+                <option value="Planeta Kaioh">Planeta Senhor Kaioh</option>
             </select>
         </fieldset>
         <fieldset class="dadosEx">
             <legend>Dados extras:</legend>
             <label for="raca">Raça do Universo 7 preferida:</label>
             <select name="raca" id="raca" required>
-                <option value="terraqueo">Terráqueo</option>
-                <option value="sayajin">Sayajin</option>
-                <option value="terraqueo">Namekosejin</option>
-                <option value="terraqueo">Freeza</option>
-                <option value="terraqueo">Yardrats</option>
+                <option value="Terraqueo">Terráqueo</option>
+                <option value="Sayajin">Sayajin</option>
+                <option value="Namekosejin">Namekosejin</option>
+                <option value="Freeza">Freeza</option>
+                <option value="Yardrats">Yardrats</option>
             </select>
             <div>
                 <label for="trabalho">Trabalho</label>
@@ -60,7 +61,7 @@
             <input type="radio" name="tamanho" id="tamanho" value="500" required>500ml
             <input type="radio" name="tamanho" id="tamanho" value="300" required>300ml
             <input type="radio" name="tamanho" id="tamanho" value="100" required>100ml
-            <input type="radio" name="tamanho" id="tamanho" value="casquinha" required>Casquinha
+            <input type="radio" name="tamanho" id="tamanho" value="Casquinha" required>Casquinha
             <input type="radio" name="tamanho" id="tamanho" value="naoEntendeu" required>Qual parte do gosto de terra
             você não entendeu?
         </fieldset>
@@ -71,6 +72,7 @@
         </fieldset>
         <button type="submit">Enviar</button>
         <button type="reset">Limpar</button>
+        <button onclick="json()">Gerar JSON</button>
     </form>
 </body>
 
